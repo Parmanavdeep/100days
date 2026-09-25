@@ -1,13 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 int main() {
-double a, b;
-//Display sum, difference, product and quotient; handle division by zero.
-printf("Enter ur value for sum or product or quotient and division by zero");
-scanf("%lf %lf", &a, &b);
-printf("Sum = %.2f\nDifference = %.2f\nProduct = %.2f\n", a+b, a-b, a*b);
-if (b != 0)
-printf("Quotient = %.2f", a/b);
-else
-printf("Quotient = Cannot divide by zero");
+float l, b;
+//calculating area and perimeter of a rectangle.
+printf("Enter value to calacualte area and perimeter of a rectangle: ");
+scanf("%f %f", &l, &b);
+printf("Area = %.2f\nPerimeter = %.2f", l*b, 2*(l+b));
 return 0;
 }
